@@ -29,6 +29,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="g5e-cf-gHa" kind="show" id="neY-yG-E9I"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -107,14 +110,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="PsR-4g-LRW" secondAttribute="trailing" constant="155" id="Ccy-Ym-zfZ"/>
-                            <constraint firstItem="PsR-4g-LRW" firstAttribute="top" secondItem="XNh-YG-18j" secondAttribute="bottom" constant="8" id="GzF-cR-lCf"/>
                             <constraint firstItem="dho-9a-R0B" firstAttribute="centerX" secondItem="6xS-05-zEF" secondAttribute="centerX" id="Hrd-lP-ZjG"/>
                             <constraint firstItem="XNh-YG-18j" firstAttribute="centerX" secondItem="6xS-05-zEF" secondAttribute="centerX" id="Uca-rB-bfS"/>
                             <constraint firstItem="jTO-3y-UTb" firstAttribute="centerX" secondItem="6xS-05-zEF" secondAttribute="centerX" id="f1t-2P-0Iz"/>
+                            <constraint firstItem="PsR-4g-LRW" firstAttribute="centerX" secondItem="6xS-05-zEF" secondAttribute="centerX" id="hq8-lv-lXt"/>
                             <constraint firstItem="91g-4r-Eok" firstAttribute="centerX" secondItem="6xS-05-zEF" secondAttribute="centerX" id="jJq-LE-rVU"/>
-                            <constraint firstItem="PsR-4g-LRW" firstAttribute="leading" secondItem="6xS-05-zEF" secondAttribute="leadingMargin" constant="155" id="pZn-fW-SbK"/>
-                            <constraint firstItem="K5j-Zj-Edo" firstAttribute="top" secondItem="PsR-4g-LRW" secondAttribute="bottom" constant="191" id="wyK-FK-dUL"/>
                         </constraints>
                     </view>
                     <connections>

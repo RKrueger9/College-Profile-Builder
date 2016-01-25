@@ -59,6 +59,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         colleges.insert(college, atIndex: destinationIndexPath.row)
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    {
+        let dvc = segue.destinationViewController as! DetailViewController
+        let index = tableView.indexPathForSelectedRow?.row
+        dvc.college = colleges[index!]
+    }
+    
     @IBAction func onTappedPlusButton(sender: UIBarButtonItem)
     {
         let alert = UIAlertController(title: "Add College", message: nil, preferredStyle: .Alert)
