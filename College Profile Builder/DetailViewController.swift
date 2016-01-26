@@ -26,12 +26,21 @@ class DetailViewController: UIViewController
         enrollmentTextField.text = String(college.population)
         imageView.image = college.image
     }
-
+    
+    func resignAllFirstResponders()
+    {
+        collegeTextField.resignFirstResponder()
+        stateTextField.resignFirstResponder()
+        enrollmentTextField.resignFirstResponder()
+    }
+    
     @IBAction func onTappedSaveButton(sender: AnyObject)
     {
         college.name = collegeTextField.text!
         college.state = stateTextField.text!
         college.population = Int(enrollmentTextField.text!)!
+        resignAllFirstResponders()
+        
     }
     
 }
