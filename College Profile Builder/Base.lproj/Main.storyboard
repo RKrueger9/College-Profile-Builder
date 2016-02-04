@@ -98,6 +98,10 @@
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PsR-4g-LRW">
                                 <rect key="frame" x="175" y="430" width="250" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Rt9-bQ-XeU"/>
+                                    <constraint firstAttribute="width" constant="250" id="UOS-11-6zo"/>
+                                </constraints>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Web Page" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0QO-cE-bfU">
                                 <rect key="frame" x="225" y="197" width="150" height="30"/>
@@ -113,16 +117,33 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XNh-YG-18j">
-                                <rect key="frame" x="266" y="346" width="68" height="36"/>
+                                <rect key="frame" x="266" y="282" width="68" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
                                     <action selector="onTappedSaveButton:" destination="g5e-cf-gHa" eventType="touchUpInside" id="hGx-oT-P9a"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OVI-Kp-mKU">
+                                <rect key="frame" x="265" y="328" width="70" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="onCameraButtonTapped:" destination="g5e-cf-gHa" eventType="touchUpInside" id="Oxz-fK-KLU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="It6-dP-cxQ">
+                                <rect key="frame" x="269" y="372" width="62" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Library"/>
+                                <connections>
+                                    <action selector="onLibraryButtonTap:" destination="g5e-cf-gHa" eventType="touchUpInside" id="0p5-Ye-rjV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="It6-dP-cxQ" firstAttribute="centerX" secondItem="6xS-05-zEF" secondAttribute="centerX" id="5Oe-7c-4WU"/>
                             <constraint firstItem="6QW-HT-fBG" firstAttribute="centerX" secondItem="6xS-05-zEF" secondAttribute="centerX" id="7Fp-jV-OwO"/>
                             <constraint firstItem="dho-9a-R0B" firstAttribute="centerX" secondItem="6xS-05-zEF" secondAttribute="centerX" id="Hrd-lP-ZjG"/>
                             <constraint firstItem="0QO-cE-bfU" firstAttribute="centerX" secondItem="6xS-05-zEF" secondAttribute="centerX" id="Nf0-Md-Yi6"/>
@@ -130,6 +151,7 @@
                             <constraint firstItem="jTO-3y-UTb" firstAttribute="centerX" secondItem="6xS-05-zEF" secondAttribute="centerX" id="f1t-2P-0Iz"/>
                             <constraint firstItem="PsR-4g-LRW" firstAttribute="centerX" secondItem="6xS-05-zEF" secondAttribute="centerX" id="hq8-lv-lXt"/>
                             <constraint firstItem="91g-4r-Eok" firstAttribute="centerX" secondItem="6xS-05-zEF" secondAttribute="centerX" id="jJq-LE-rVU"/>
+                            <constraint firstItem="OVI-Kp-mKU" firstAttribute="centerX" secondItem="6xS-05-zEF" secondAttribute="centerX" id="z0i-eP-PMS"/>
                         </constraints>
                     </view>
                     <connections>
