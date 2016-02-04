@@ -97,9 +97,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             sender.tag = 0
         }
     }
-    
-    
-    
 }
     
 
