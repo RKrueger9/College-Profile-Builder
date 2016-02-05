@@ -21,9 +21,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     {
         super.viewDidLoad()
         editButton.tag = 0
-        colleges.append(College(name: "University of Illinois", state: "Illinois", population: 44087, image: UIImage(named: "University of Illinois")! , webPage: "http://illinois.edu/"))
-        colleges.append(College(name: "Northwestern", state: "Illinois", population: 20336, image: UIImage(named: "northwestern1")! , webPage: "http://www.northwestern.edu/"))
-        colleges.append(College(name: "University of Wisconson", state: "Wisconson", population: 43193, image: UIImage(named: "Wisconson")! , webPage : "http://www.wisc.edu/"))
+        colleges.append(College(name: "University of Illinois", state: "Illinois", population: 44087, image: UIImage(named: "University of Illinois")! , webPage: "http://illinois.edu"))
+        colleges.append(College(name: "Northwestern", state: "Illinois", population: 20336, image: UIImage(named: "northwestern1")! , webPage: "http://www.northwestern.edu"))
+        colleges.append(College(name: "University of Wisconson", state: "Wisconson", population: 43193, image: UIImage(named: "Wisconson")! , webPage : "http://www.wisc.edu"))
     }
     
     override func viewWillAppear(animated: Bool)
@@ -97,9 +97,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             sender.tag = 0
         }
     }
-    
-    
-    
 }
     
 
