@@ -62,10 +62,13 @@ class DetailViewController: UIViewController,SFSafariViewControllerDelegate, UII
     
     @IBAction func toWebPageOnTap(sender: AnyObject)
     {
-        let url = NSURL(string: college.webPage)
-        let svc = SFSafariViewController(URL: url!)
-        svc.delegate = self
-        self.presentViewController(svc, animated: true, completion: nil)
+        if(college.webPage != "")
+        {
+            let url = NSURL(string: college.webPage)
+            let svc = SFSafariViewController(URL: url!)
+            svc.delegate = self
+            self.presentViewController(svc, animated: true, completion: nil)
+        }
     }
     
     @IBAction func onCameraButtonTapped(sender: AnyObject)
