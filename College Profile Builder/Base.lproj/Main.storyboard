@@ -116,14 +116,6 @@
                                     <action selector="toWebPageOnTap:" destination="g5e-cf-gHa" eventType="touchUpInside" id="iEx-mW-uW9"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XNh-YG-18j">
-                                <rect key="frame" x="266" y="235" width="68" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Save"/>
-                                <connections>
-                                    <action selector="onTappedSaveButton:" destination="g5e-cf-gHa" eventType="touchUpInside" id="hGx-oT-P9a"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OVI-Kp-mKU">
                                 <rect key="frame" x="225" y="282" width="70" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -140,6 +132,21 @@
                                     <action selector="onLibraryButtonTap:" destination="g5e-cf-gHa" eventType="touchUpInside" id="0p5-Ye-rjV"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XNh-YG-18j">
+                                <rect key="frame" x="266" y="235" width="68" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="onTappedSaveButton:" destination="g5e-cf-gHa" eventType="touchUpInside" id="hGx-oT-P9a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SwD-lL-u3l">
+                                <rect key="frame" x="408" y="249" width="30" height="30"/>
+                                <state key="normal" title="Map"/>
+                                <connections>
+                                    <segue destination="ZiX-4c-ICf" kind="show" id="sD5-JP-ck4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -152,6 +159,7 @@
                             <constraint firstItem="It6-dP-cxQ" firstAttribute="centerX" secondItem="6xS-05-zEF" secondAttribute="centerX" constant="44" id="bex-Jm-gje"/>
                             <constraint firstItem="PsR-4g-LRW" firstAttribute="centerX" secondItem="6xS-05-zEF" secondAttribute="centerX" id="cRa-gy-GHz"/>
                             <constraint firstItem="0QO-cE-bfU" firstAttribute="centerX" secondItem="6xS-05-zEF" secondAttribute="centerX" id="oAs-8X-zdc"/>
+                            <constraint firstItem="SwD-lL-u3l" firstAttribute="centerX" secondItem="6xS-05-zEF" secondAttribute="centerX" constant="123" id="uEB-Bu-FAP"/>
                         </constraints>
                     </view>
                     <connections>
@@ -165,6 +173,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wdx-41-OBk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1788" y="284"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="Ixf-fK-yGv">
+            <objects>
+                <viewController id="ZiX-4c-ICf" customClass="MapViewController" customModule="College_Profile_Builder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hBc-gL-en0"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yos-cj-Aw6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jfZ-rU-Sfk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hAN-Cb-JwW">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </mapView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pcq-yb-rtv">
+                                <rect key="frame" x="211" y="72" width="179" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hAN-Cb-JwW" firstAttribute="leading" secondItem="jfZ-rU-Sfk" secondAttribute="leadingMargin" constant="-20" id="7KR-rZ-oiR"/>
+                            <constraint firstItem="Pcq-yb-rtv" firstAttribute="centerX" secondItem="jfZ-rU-Sfk" secondAttribute="centerX" id="LFs-pG-0Ve"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hAN-Cb-JwW" secondAttribute="trailing" constant="-20" id="YJl-1b-bZK"/>
+                            <constraint firstItem="hAN-Cb-JwW" firstAttribute="top" secondItem="hBc-gL-en0" secondAttribute="bottom" id="hxx-4n-cS8"/>
+                            <constraint firstItem="Yos-cj-Aw6" firstAttribute="top" secondItem="hAN-Cb-JwW" secondAttribute="bottom" id="yhf-k4-LFf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="hAN-Cb-JwW" id="oUV-lv-m4e"/>
+                        <outlet property="textField" destination="Pcq-yb-rtv" id="KN5-Co-NtD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TxV-uG-dlm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2476" y="284"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TXr-9T-yDT">

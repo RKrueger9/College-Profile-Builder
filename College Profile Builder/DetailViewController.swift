@@ -9,6 +9,7 @@
 import UIKit
 import SafariServices
 
+
 class DetailViewController: UIViewController,SFSafariViewControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate
 {
     
@@ -57,7 +58,6 @@ class DetailViewController: UIViewController,SFSafariViewControllerDelegate, UII
         college.webPage = webPageTextField.text!
         college.image = imageView.image
         resignAllFirstResponders()
-        
     }
     
     @IBAction func toWebPageOnTap(sender: AnyObject)
