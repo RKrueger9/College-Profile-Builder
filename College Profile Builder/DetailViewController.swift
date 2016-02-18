@@ -31,7 +31,6 @@ class DetailViewController: UIViewController,SFSafariViewControllerDelegate, UII
         imageView.image = college.image
         webPageTextField.text = college.webPage
         imagePicker.delegate = self
-        
     }
     
     func resignAllFirstResponders()
@@ -67,7 +66,7 @@ class DetailViewController: UIViewController,SFSafariViewControllerDelegate, UII
             let url = NSURL(string: college.webPage)
             let svc = SFSafariViewController(URL: url!)
             svc.delegate = self
-               self.presentViewController(svc, animated: true, completion: nil)
+            self.presentViewController(svc, animated: true, completion: nil)
         }
     }
     

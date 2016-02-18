@@ -15,12 +15,15 @@ class MapViewController: UIViewController, UITextFieldDelegate
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var mapView: MKMapView!
     
+    var college : College!
+   
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
         textField.delegate = self
-        findLocation("Barrington, IL")
-        
+        var collegeLocation = "\(college.name), \(college.state)"
+        findLocation(collegeLocation)
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool
@@ -51,7 +54,6 @@ class MapViewController: UIViewController, UITextFieldDelegate
                         })
                         alert.addAction(locationAction)
                     }
-                    
                     let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
                     alert.addAction(cancelAction)
                     self.presentViewController(alert, animated: true, completion: nil)
@@ -61,17 +63,15 @@ class MapViewController: UIViewController, UITextFieldDelegate
                     let placemark = placemarks!.first! as CLPlacemark
                     self.displayMap(placemark)
                 }
-                
             }
         }
-        
     }
     
     func displayMap(placemark: CLPlacemark)
     {
-        //textField.text = placemark.name
+        textField.text = placemark.name
         let center = placemark.location!.coordinate
-        let span = MKCoordinateSpanMake(0.01, 0.01)
+        let span = MKCoordinateSpanMake(1, 1)
         let region = MKCoordinateRegionMake(center, span)
         let pin = MKPointAnnotation()
         pin.coordinate = center

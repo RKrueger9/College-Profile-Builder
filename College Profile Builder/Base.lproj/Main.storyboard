@@ -97,7 +97,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PsR-4g-LRW">
-                                <rect key="frame" x="175" y="323" width="250" height="150"/>
+                                <rect key="frame" x="175" y="344" width="250" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="864-GW-Gu9"/>
                                     <constraint firstAttribute="height" constant="150" id="aAX-z4-dG6"/>
@@ -109,7 +109,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="URL"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6QW-HT-fBG">
-                                <rect key="frame" x="400" y="197" width="30" height="30"/>
+                                <rect key="frame" x="395" y="197" width="30" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="Go"/>
                                 <connections>
@@ -117,7 +117,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OVI-Kp-mKU">
-                                <rect key="frame" x="225" y="282" width="70" height="36"/>
+                                <rect key="frame" x="225" y="290" width="70" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="Camera"/>
                                 <connections>
@@ -125,7 +125,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="It6-dP-cxQ">
-                                <rect key="frame" x="313" y="282" width="62" height="36"/>
+                                <rect key="frame" x="313" y="290" width="62" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="Library"/>
                                 <connections>
@@ -133,7 +133,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XNh-YG-18j">
-                                <rect key="frame" x="266" y="235" width="68" height="36"/>
+                                <rect key="frame" x="266" y="246" width="68" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
@@ -141,7 +141,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SwD-lL-u3l">
-                                <rect key="frame" x="408" y="249" width="30" height="30"/>
+                                <rect key="frame" x="395" y="249" width="30" height="30"/>
                                 <state key="normal" title="Map"/>
                                 <connections>
                                     <segue destination="ZiX-4c-ICf" kind="show" id="sD5-JP-ck4"/>
@@ -158,8 +158,8 @@
                             <constraint firstItem="dho-9a-R0B" firstAttribute="centerX" secondItem="6xS-05-zEF" secondAttribute="centerX" id="XwD-T1-QuM"/>
                             <constraint firstItem="It6-dP-cxQ" firstAttribute="centerX" secondItem="6xS-05-zEF" secondAttribute="centerX" constant="44" id="bex-Jm-gje"/>
                             <constraint firstItem="PsR-4g-LRW" firstAttribute="centerX" secondItem="6xS-05-zEF" secondAttribute="centerX" id="cRa-gy-GHz"/>
+                            <constraint firstItem="SwD-lL-u3l" firstAttribute="centerX" secondItem="6xS-05-zEF" secondAttribute="centerX" constant="110" id="ee5-vH-uY4"/>
                             <constraint firstItem="0QO-cE-bfU" firstAttribute="centerX" secondItem="6xS-05-zEF" secondAttribute="centerX" id="oAs-8X-zdc"/>
-                            <constraint firstItem="SwD-lL-u3l" firstAttribute="centerX" secondItem="6xS-05-zEF" secondAttribute="centerX" constant="123" id="uEB-Bu-FAP"/>
                         </constraints>
                     </view>
                     <connections>
@@ -189,7 +189,7 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hAN-Cb-JwW">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                             </mapView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pcq-yb-rtv">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Pcq-yb-rtv">
                                 <rect key="frame" x="211" y="72" width="179" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
