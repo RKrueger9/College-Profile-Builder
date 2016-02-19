@@ -16,6 +16,8 @@ class College: NSObject
     var image = UIImage(named: "Default")
     var webPage = "";
     
+  
+    
     convenience init(name: String, state: String, population: Int, image: UIImage, webPage: String) {
         self.init()
         self.name = name

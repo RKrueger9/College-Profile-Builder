@@ -21,6 +21,7 @@ class DetailViewController: UIViewController,SFSafariViewControllerDelegate, UII
     
     var college : College!
     let imagePicker = UIImagePickerController()
+    var location = ""
     
     override func viewDidLoad()
     {
@@ -31,6 +32,13 @@ class DetailViewController: UIViewController,SFSafariViewControllerDelegate, UII
         imageView.image = college.image
         webPageTextField.text = college.webPage
         imagePicker.delegate = self
+        location = college.name
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    {
+        let dvc = segue.destinationViewController as! MapViewController
+        dvc.location = self.location
     }
     
     func resignAllFirstResponders()
